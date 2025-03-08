@@ -1,0 +1,123 @@
+.profit-period-container {
+  max-width: 600px;
+  margin: 20px auto auto;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #333;
+}
+
+.period-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.period-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.period-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.period-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-form {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+}
+.add-period-btn {
+  width: 100px;
+  margin-left: 0;
+}
+input[type='datetime-local'] {
+  width: 170px;
+}
+input[type='number'] {
+  width: 170px;
+}
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}

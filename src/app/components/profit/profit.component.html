@@ -1,0 +1,24 @@
+<div class="profit-container">
+  <h2>Profit Management</h2>
+
+  <div class="profit-form">
+    <input [(ngModel)]="newProfitName" placeholder="Enter profit name" />
+    <button (click)="createProfit()">Create</button>
+  </div>
+
+  <ul class="profit-list">
+    <li *ngFor="let profit of profits">
+      <div class="header-profit">
+        <h3>{{ profit.name }}</h3>
+        <button class="delete-profit-btn" (click)="deleteProfit(profit.id)">❌</button>
+      </div>
+      <app-profit-period
+        [profitId]="profit.id"
+        (periodDeleted)="updateChart(profit.id)"
+        (periodAdded)="updateChart(profit.id)"
+        (periodUpdated)="updateChart(profit.id)"
+      ></app-profit-period>
+      <app-profit-chart [profitId]="profit.id"></app-profit-chart>
+    </li>
+  </ul>
+</div>

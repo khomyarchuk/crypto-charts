@@ -1,0 +1,21 @@
+<div class="chart-container">
+  <h2>📈 BTN/ETC Tickers</h2>
+
+  <div class="chart-controls">
+    <button (click)="loadData('1w', 4)">Past Month</button>
+    <button (click)="loadData('1d', 7)">Past Week</button>
+    <button (click)="loadData('1h', 24)">Past Day</button>
+  </div>
+
+  <div class="charts">
+    <div class="chart-card">
+      <h3>BTC/USDT</h3>
+      <canvas id="btcChart" width="600" height="300"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>ETH/USDT</h3>
+      <canvas id="ethChart" width="600" height="300"></canvas>
+    </div>
+  </div>
+</div>

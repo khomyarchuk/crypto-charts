@@ -1,0 +1,37 @@
+<div class="profit-period-container">
+  <h3>📅 Profit Periods</h3>
+
+  <div class="period-form">
+    <input type="datetime-local" [(ngModel)]="newPeriod.start" />
+    <input type="datetime-local" [(ngModel)]="newPeriod.end" />
+    <input type="number" [(ngModel)]="newPeriod.factor" placeholder="Factor" />
+    <button class="add-period-btn" (click)="addPeriod()">Add Period</button>
+  </div>
+
+  <ul class="period-list">
+    <li *ngFor="let period of periods">
+      {{ period.start | date: 'short' }} - {{ period.end | date: 'short' }} (Factor:
+      {{ period.factor }})
+      <div>
+        <button (click)="startEditing(period)">Edit</button>
+        <button class="delete-btn" (click)="deletePeriod(period.id)">Delete</button>
+      </div>
+    </li>
+  </ul>
+
+  <div *ngIf="editingPeriod && isEditing" class="edit-form">
+    <h3>✏️ Edit Profit Period</h3>
+
+    <label>Start:</label>
+    <input type="datetime-local" [(ngModel)]="editingPeriod.start" />
+
+    <label>End:</label>
+    <input type="datetime-local" [(ngModel)]="editingPeriod.end" />
+
+    <label>Factor:</label>
+    <input type="number" step="0.1" [(ngModel)]="editingPeriod.factor" />
+
+    <button class="save-btn" (click)="updatePeriod()">Save</button>
+    <button class="cancel-btn" (click)="cancelEditing()">Cancel</button>
+  </div>
+</div>

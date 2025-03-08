@@ -1,0 +1,65 @@
+canvas {
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.chart-controls {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.charts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: white;
+}

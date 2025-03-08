@@ -1,0 +1,56 @@
+.profit-container {
+  max-width: 600px;
+  margin: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.profit-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+ul.profit-list {
+  margin-right: 27px;
+}
+
+.profit-list li {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.header-profit {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  flex-grow: 0.1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.delete-profit-btn {
+  background: none;
+  margin: 0;
+}
